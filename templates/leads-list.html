@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header pb-0">
+                    <div>
+                        <h5 class="mb-0 text-center font-weight-bolder">ALL LEADS</h5>
+                    </div>
+                    <div class="d-lg-flex">
+                        <div class="ms-auto my-auto mt-lg-0 mt-4">
+                            <div class="ms-auto my-auto text-center">
+                                <a href="{% url 'leads-add' %}" class="btn bg-gradient-primary btn-sm mb-0">+&nbsp; Add New Lead</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body px-0 pb-0">
+                    <div class="table-responsive">
+                        <table class="table table-flush" id="products-list">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th class="text-center p-3">Company</th>
+                                    <th class="text-center p-3">Mobile Number</th>
+                                    <th class="text-center p-3">Status</th>
+                                    <th class="text-center p-3">Possiblity</th>
+                                    <th class="text-center p-3">ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-sm text-center p-3">Client Name</td>
+                                    <td class="text-sm text-center p-3">+91 9400722865</td>
+                                    <td class="text-sm text-center p-3">New Business</td>
+                                    <td class="text-sm text-center p-3">Cold</td>
+                                    <td class="text-sm text-center p-3">
+                                        <a href="{% url 'leads-view' %}" data-bs-toggle="tooltip" data-bs-original-title="View Lead">
+                                            <i class="fas fa-eye text-secondary"></i>
+                                        </a>
+                                        <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip" data-bs-original-title="Edit Lead">
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                        </a>
+                                        <a href="javascript:;" data-bs-toggle="tooltip" data-bs-original-title="Delete Lead">
+                                            <i class="fas fa-trash text-secondary"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

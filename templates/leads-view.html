@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row mt-4">
+        <div>
+            <h5 class="mb-5 text-center font-weight-bolder">LEAD VIEW</h5>
+        </div>
+        <div class="col-lg-4">
+            <div class="card h-100">
+                <div class="card-body">
+                <h5 class="font-weight-bolder">Product Image</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <img class="w-100 border-radius-lg shadow-lg mt-3" src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcGFueXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="product_image">
+                    </div>
+                        <div class="col-12 mt-4">
+                            <div class="d-flex justify-content-center">
+                                <button class="btn bg-gradient-danger btn-sm mb-0 me-2" type="button" name="button">Cancel</button>
+                                <button class="btn bg-gradient-success btn-sm mb-0" type="button" name="button">Convert to opportunity</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 mt-lg-0 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="font-weight-bolder">Lead Information</h5>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label>Company Name</label>
+                            <p class="ml-5 ps-2" >Thycha Creatives</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                            <label>Client Name</label>
+                            <p class="ml-5 ps-2" >Naseef</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label>Company Name</label>
+                            <p class="ml-5 ps-2" >Thycha Creatives</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                            <label>Client Name</label>
+                            <p class="ml-5 ps-2" >Naseef</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="mt-4">Status</label>
+                            <p class="ml-5 ps-2" >Cold</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="mt-4">Business Type</label>
+                            <p class="ml-5 ps-2" >New business</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <label class="mt-4">Description</label>
+                            <div id="edit-deschiption-edit" class="h-50">
+                                Long sleeves black denim jacket with a twisted design. Contrast stitching. Button up closure. White arrow prints on the back.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
